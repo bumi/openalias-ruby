@@ -8,7 +8,7 @@ class!(Openalias);
 
 methods!(
     Openalias,
-    itself,
+    _itself,
     
     fn addresses(address: RString) -> Array {
       let mut cryptoaddresses = Array::new();
@@ -45,7 +45,7 @@ methods!(
             }
            return cryptoaddresses;
         }
-        Err(cas) => {
+        Err(_cas) => {
             return cryptoaddresses;
         }
       }
