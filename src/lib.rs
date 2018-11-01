@@ -46,7 +46,6 @@ methods!(
            return cryptoaddresses;
         }
         Err(cas) => {
-            println!("{}", cas);
             return cryptoaddresses;
         }
       }
