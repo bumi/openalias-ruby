@@ -6,4 +6,4 @@ Thermite::Tasks.new
 
 RSpec::Core::RakeTask.new(:spec)
 
-task :default => :spec
+task :default => ['thermite:build', 'thermite:test', 'spec']
