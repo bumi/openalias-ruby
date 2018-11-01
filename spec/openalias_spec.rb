@@ -7,7 +7,7 @@ RSpec.describe Openalias do
 
   it "provides accessors for the data" do
     expect(Openalias.addresses('donate.getmonero.org')[0].recipient_name).to eql('Monero Development')
-    expect(Openalias.addresses('donate.getmonero.org')[0].address).to eql('44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A')
+    expect(Openalias.addresses('donate.getmonero.org').find { |c| c.cryptocurrency.downcase == 'xmr' }.address).to eql('44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A')
   end
 
   it "returns and crypto addresses array" do
