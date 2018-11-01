@@ -15,6 +15,8 @@ At some point it would probably be awesome to rewrite the whole thing in pure ru
 
 ## Installation
 
+(You need `rustc` installed to build the native rust extension)
+
 Add this line to your application's Gemfile:
 
 ```ruby
