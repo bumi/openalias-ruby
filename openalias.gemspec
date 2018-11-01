@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["bumi"]
   spec.email         = ["hello@michaelbumann.com"]
 
-  spec.summary       = %q{OpenAlias lookup for ruby}
-  spec.description   = %q{Wrapper around the OpenAlias rust implementation that allows you to lookup OpenAlias entries}
+  spec.summary       = %q{OpenAlias lookup and parsing for ruby}
+  spec.description   = %q{Wrapper around the OpenAlias rust implementation that allows to lookup and parse OpenAlias entries}
   spec.homepage      = "https://github.com/bumi/openalias-ruby"
   spec.license       = "MIT"
 
