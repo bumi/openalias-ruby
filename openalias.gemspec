@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["hello@michaelbumann.com"]
 
   spec.summary       = %q{OpenAlias lookup and parsing for ruby}
-  spec.description   = %q{Wrapper around the OpenAlias rust implementation that allows to lookup and parse OpenAlias entries}
+  spec.description   = %q{Wrapper around the OpenAlias rust implementation that allows to lookup and parse OpenAlias entries. (Though we should write this in pure ruby - please help)}
   spec.homepage      = "https://github.com/bumi/openalias-ruby"
   spec.license       = "MIT"
 
