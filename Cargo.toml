@@ -1,0 +1,12 @@
+[package]
+name = "openalias"
+version = "0.1.0"
+authors = ["bumi <hello@michaelbumann.com>"]
+
+[dependencies]
+ruru = "0.9.0"
+openalias = "0.2.0"
+
+[lib]
+name = "openalias_rust"
+crate-type = ["dylib"]
