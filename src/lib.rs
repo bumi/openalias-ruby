@@ -55,7 +55,6 @@ methods!(
 #[no_mangle]
 pub extern fn init_openalias_rust() {
     Class::from_existing("Openalias").define(|itself| {
-    //Class::new("OpenaliasRust", None).define(|itself| {
         itself.def_self("addresses", addresses);
     });
 }
