@@ -2,7 +2,7 @@ require 'thermite/fiddle'
 require 'ostruct'
 
 class Openalias
-  VERSION = "0.1.0"
+  VERSION = "0.2.0"
   class CryptoAddress < OpenStruct;
 
     def method_missing(method_name, *args, &block)
