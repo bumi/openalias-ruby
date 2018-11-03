@@ -36,6 +36,9 @@ Openalias.addresses('btc@michaelbumann.com')
 Openalias.addresses('donate.getmonero.org')
 => [#<Openalias::CryptoAddress cryptocurrency="xmr", address="44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A", recipient_name="Monero Development", tx_description="Donation to Monero Core Team">, #<Openalias::CryptoAddress cryptocurrency="btc", address="1KTexdemPdxSBcG55heUuTjDRYqbC5ZL8H", recipient_name="Monero Development", tx_description="Donation to Monero Core Team">]
 
+Openalias.addresses('donate.getmonero.org').find(&:xmr?)
+=> #<Openalias::CryptoAddress cryptocurrency="xmr", address="44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A", recipient_name="Monero Development", tx_description="Donation to Monero Core Team">
+
 Openalias.addresses('donate.getmonero.org')[0].recipient_name
 => "Monero Development"
 
