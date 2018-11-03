@@ -30,7 +30,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-Openalias.addresses('btc@michaelbumann.com')
+Openalias.addresses('btc@michaelbumann.com') # or Openalias.lookup('btc@michaelbumann.com')
 => [#<Openalias::CryptoAddress cryptocurrency="btc", address="3MGfEx4iaVEAy8nD4rWdocgrPo8aCR4Zfa", recipient_name="bumi">]
 
 Openalias.addresses('donate.getmonero.org')

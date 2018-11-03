@@ -5,11 +5,15 @@ RSpec.describe Openalias do
     expect(Openalias::VERSION).not_to be nil
   end
 
+  it "provides #lookup as an alias for #addresses" do
+    expect(Openalias).to respond_to(:lookup)
+  end
+
   it "provides ? methods to check for the currency" do
     expect(Openalias.addresses('donate.getmonero.org').find { |c| c.cryptocurrency.downcase == 'xmr' }.xmr?).to eql(true)
     expect(Openalias.addresses('donate.getmonero.org').find { |c| c.cryptocurrency.downcase == 'xmr' }.btc?).to eql(false)
     expect(Openalias.addresses('donate.getmonero.org').find(&:xmr?).xmr?).to eql(true)
-    expect(Openalias.addresses('donate.getmonero.org').find(&:xmr?).xmr).to eql(true)
+    expect(Openalias.addresses('donate.getmonero.org').find(&:xmr?).btc?).to eql(false)
   end
 
   it "provides accessors for the data" do

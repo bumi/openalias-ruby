@@ -19,4 +19,7 @@ class Openalias
     cargo_project_path: toplevel_dir,
     ruby_project_path: toplevel_dir)
 
+  def self.lookup(address)
+    self.addresses(address)
+  end
 end
